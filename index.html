@@ -539,9 +539,11 @@
     </div>
     <div style="max-width:760px;margin:0 auto" class="reveal">
       <p class="center" style="color:#ddd;margin-bottom:6px;font-weight:700">⇩ Jetzt Platz reservieren ⇩</p>
-      <div class="form-box">
-        <iframe src="https://ext.matool.de/ptformdyn/?hash=1d560e59f1dea425" title="Voranmeldung Probetraining" loading="lazy"></iframe>
+      <div class="form-box" style="padding:0">
+        <iframe src='https://ext.matool.de/ptformdyn/?hash=10c2f43532b83cb0' id='probeForm' scrolling='no' frameborder='0' style='width:100%;max-width:630px;border:0;display:block;min-height:120px'></iframe>
+        <div style='border-top:1px solid grey;border-color:currentColor;color:grey;mix-blend-mode:difference;padding-top:5px;padding-bottom:20px;padding-right:5px;width:100%;max-width:630px;text-align:right'>https://www.matool.de made by MATOOL</div>
       </div>
+      <script type='text/javascript'>/*<![CDATA[*/function mm(){var n=25;var h=10;var k=0;var d=document.getElementById('probeForm');var f;var b=window.addEventListener?'addEventListener':'attachEvent';var c=window[b];var o=b=='attachEvent'?'onmessage':'message';c(o,function(e){if(e.data===parseInt(e.data)){if(e.data==99999999){if(typeof GoTr=='function'){GoTr();}var g=function(m,l){var s=document.scrollingElement||document.documentElement,q=s.scrollTop,p=m-q,r=+new Date(),a=function(v,u,x,w){v/=w/2;if(v<1){return x/2*v*v+u}v--;return -x/2*(v*(v-2)-1)+u},i=function(){var v=+new Date();var t=v-r;s.scrollTop=parseInt(a(t,q,p,l));if(t<l){requestAnimationFrame(i)}else{s.scrollTop=m}};i()};g(d.getBoundingClientRect().top+document.documentElement.scrollTop-(Math.max(document.documentElement.clientHeight,window.innerHeight||0)/2),500)}else{f=e.data}}},false);var j=window.setInterval(function(){var a=d.offsetHeight;k=Math.round((f-a)/h);k=Math.abs(k);if(k<1){k=0}if(f>0&&f!=a){if((f-a)>0){d.height=(a+k)+'px'}else{d.height=(a-k)+'px'}}},n)}mm();/*]]>*/</script>
     </div>
   </div>
 </section>
