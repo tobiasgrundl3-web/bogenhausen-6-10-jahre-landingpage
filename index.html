@@ -262,7 +262,28 @@
     .vcard{padding:20px}
   }
 </style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5J26Z4L3');</script>
+<!-- End Google Tag Manager -->
+<!-- Meta Pixel Code -->
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','DEINE_PIXEL_ID');fbq('track','PageView');</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=DEINE_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5J26Z4L3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <body>
 
 <!-- ══ ANKÜNDIGUNGSLEISTE ══ -->
@@ -543,7 +564,35 @@
         <iframe src='https://ext.matool.de/ptformdyn/?hash=10c2f43532b83cb0' id='probeForm' scrolling='no' frameborder='0' style='width:100%;max-width:630px;border:0;display:block;min-height:120px'></iframe>
         <div style='border-top:1px solid grey;border-color:currentColor;color:grey;mix-blend-mode:difference;padding-top:5px;padding-bottom:20px;padding-right:5px;width:100%;max-width:630px;text-align:right'>https://www.matool.de made by MATOOL</div>
       </div>
-      <script type='text/javascript'>/*<![CDATA[*/function mm(){var n=25;var h=10;var k=0;var d=document.getElementById('probeForm');var f;var b=window.addEventListener?'addEventListener':'attachEvent';var c=window[b];var o=b=='attachEvent'?'onmessage':'message';c(o,function(e){if(e.data===parseInt(e.data)){if(e.data==99999999){if(typeof GoTr=='function'){GoTr();}var g=function(m,l){var s=document.scrollingElement||document.documentElement,q=s.scrollTop,p=m-q,r=+new Date(),a=function(v,u,x,w){v/=w/2;if(v<1){return x/2*v*v+u}v--;return -x/2*(v*(v-2)-1)+u},i=function(){var v=+new Date();var t=v-r;s.scrollTop=parseInt(a(t,q,p,l));if(t<l){requestAnimationFrame(i)}else{s.scrollTop=m}};i()};g(d.getBoundingClientRect().top+document.documentElement.scrollTop-(Math.max(document.documentElement.clientHeight,window.innerHeight||0)/2),500)}else{f=e.data}}},false);var j=window.setInterval(function(){var a=d.offsetHeight;k=Math.round((f-a)/h);k=Math.abs(k);if(k<1){k=0}if(f>0&&f!=a){if((f-a)>0){d.height=(a+k)+'px'}else{d.height=(a-k)+'px'}}},n)}mm();/*]]>*/</script>
+      <!-- MATOOL Conversion Script -->
+      <script>
+      (function(){
+        var n=25,h=10,k=0,d=document.getElementById('probeForm');
+        if(!d)return;
+        var f,b=window.addEventListener?'addEventListener':'attachEvent',
+        c=window[b],o=b=='attachEvent'?'onmessage':'message';
+        c(o,function(e){
+          if(e.data===parseInt(e.data)){
+            if(e.data==99999999){
+              window.dataLayer=window.dataLayer||[];
+              window.dataLayer.push({event:"formular_abgesendet"});
+              if(typeof fbq!=="undefined"){fbq("track","Lead");}
+              console.log("MA Tool GoTr(): formular_abgesendet → dataLayer");
+              var g=function(m,l){var s=document.scrollingElement||document.documentElement,
+              q=s.scrollTop,p=m-q,r=+new Date(),
+              a=function(v,u,x,w){v/=w/2;if(v<1){return x/2*v*v+u}v--;return -x/2*(v*(v-2)-1)+u},
+              i=function(){var v=+new Date();var t=v-r;s.scrollTop=parseInt(a(t,q,p,l));
+              if(t<l){requestAnimationFrame(i)}else{s.scrollTop=m}};i()};
+              g(d.getBoundingClientRect().top+document.documentElement.scrollTop-
+              (Math.max(document.documentElement.clientHeight,window.innerHeight||0)/2),500);
+            }else{f=e.data;}
+          }
+        },false);
+        window.setInterval(function(){var a=d.offsetHeight;k=Math.round((f-a)/h);
+        k=Math.abs(k);if(k<1){k=0}if(f>0&&f!=a){
+        if((f-a)>0){d.height=(a+k)+'px'}else{d.height=(a-k)+'px'}}},n);
+      })();
+      </script>
     </div>
   </div>
 </section>
