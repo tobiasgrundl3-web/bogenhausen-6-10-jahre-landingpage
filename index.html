@@ -265,7 +265,7 @@
   .offer-bar{background:#a3b820;color:#fff;text-align:center;padding:11px 16px;font-size:.95rem;font-weight:700;letter-spacing:.01em;line-height:1.4}
   .offer-bar span{display:inline-block;background:rgba(0,0,0,.15);border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:600;margin-left:8px;vertical-align:middle}
   @media(max-width:480px){.offer-bar{font-size:.85rem}}
-.hero-badge-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.hero-badge-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px;margin-top:0}
 .hero-badge-row .loc-pill{display:inline-flex;align-items:center;gap:6px;background:rgba(185,206,46,.12);border:1px solid var(--green);color:var(--green-dark);font-size:.8rem;font-weight:700;padding:5px 12px;border-radius:50px}
 .cta-plaetze{margin:8px 0 0;font-size:.88rem;font-weight:700;color:#c0392b;letter-spacing:.01em}
 .schulstart-badge{display:inline-flex;align-items:center;background:#B9CE2E;border:1.5px solid #B9CE2E;border-radius:30px;margin-bottom:14px;padding:7px 16px;gap:0;box-shadow:0 2px 14px rgba(185,206,46,.3);color:#fff;font-size:.85rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;white-space:nowrap}
@@ -320,6 +320,8 @@
       aspect-ratio:unset !important;
     }
     .hero-bottom{order:4}
+    .hero-bottom ul{display:none}
+    .hero-bottom .hero-note{display:none}
     /* Urgency (Desktop) auf Mobile ausblenden – mobile-urgency-top übernimmt */
     .hero-top-text .urgency{display:none}
   }
@@ -432,12 +434,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Mobile-only: Urgency ganz oben -->
     <div class="mobile-urgency-top">🔥 Schnuppertag · Sa., 19.09.2026</div>
 
-    <!-- Spalte 1 oben: Badge, Loc, H1, Tagline, Urgency (Desktop), Lead (Desktop) -->
+    <!-- Spalte 1 oben: Badge-Row, H1, Lead-Mobile, Urgency+Lead (Desktop) -->
     <div class="hero-top-text">
-      <div class="schulstart-badge">🎒 Zum Schulstart</div>
-      <div class="loc-pill">📍 Bogenhausen</div>
+      <div class="hero-badge-row">
+        <div class="schulstart-badge">🎒 Zum Schulstart</div>
+        <div class="loc-pill">📍 Bogenhausen</div>
+      </div>
       <h1>Kinder Kampfsport München <span>6–10 Jahre</span><br>Das Power Tigers Programm</h1>
-      <p class="hero-tagline">Mehr Selbstbewusstsein&nbsp;• Mehr Konzentration&nbsp;• Mehr Sicherheit</p>
+      <p class="lead-mobile">Mehr Selbstbewusstsein, Selbstverteidigung &amp; Werte – mit Spaß für 6- bis 10-Jährige.</p>
       <div class="urgency">🔥 Schnuppertag <strong>Sa., 19.09.2026</strong></div>
       <p class="lead">Mehr als nur ein reines Kampfsportprogramm: Wir vermitteln Ihrem Kind eine „Ja, ich schaffe das"-Einstellung – mit mehr Selbstbewusstsein, Konzentration und Sicherheit für den Schulalltag.</p>
     </div>
@@ -456,23 +460,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="badge-float"><span class="dot"></span>99% Weiterempfehlung</div>
     </div>
 
-    <!-- Spalte 1 unten: Lead (Mobile), USPs, CTA, Plätze, Badges -->
+    <!-- Spalte 1 unten: Badges (Mobile), CTA, Plätze, USPs (Desktop) -->
     <div class="hero-bottom">
-      <p class="lead-mobile">Mehr Selbstbewusstsein, Selbstverteidigung &amp; Werte – mit Spaß für 6- bis 10-Jährige.</p>
       <ul>
         <li>Stärkung von Selbstbewusstsein &amp; Selbstvertrauen</li>
         <li>Verbale &amp; körperliche Selbstverteidigung + Anti-Mobbing</li>
         <li>Wertevermittlung: Respekt, Disziplin, Mut</li>
       </ul>
+      <div class="mobile-badges-row">
+        <div class="mbadge">⭐ 99% Weiterempfehlung</div>
+        <div class="mbadge">🏆 30+ Jahre Erfahrung</div>
+        <div class="mbadge">📍 Bogenhausen</div>
+      </div>
       <div class="btn-row">
         <a href="#zum-formular" class="btn big">Gratis Schnuppertag sichern →</a>
       </div>
       <p class="cta-plaetze">🔴 Noch <span id="plaetze-cta">15</span> freie Plätze</p>
-      <div class="mobile-badges-row">
-        <div class="mbadge">⭐ 99% Weiterempfehlung</div>
-        <div class="mbadge">🏆 30+ Jahre</div>
-        <div class="mbadge">📍 Bogenhausen</div>
-      </div>
       <p class="hero-note" style="margin-top:14px;font-size:.9rem;color:#777">✅ Aktuell <strong>kostenlos</strong> · ⏱ Anfrage in 60 Sekunden · 📍 Grünwalder Weg 20c, Bogenhausen</p>
     </div>
 
