@@ -366,6 +366,21 @@
     .mobile-schulstart-bar .msb-rating{font-weight:700;color:var(--green-dark);font-size:.88rem}
   }
 
+
+  /* ── Hero Tagline ── */
+  .hero-tagline{font-size:1rem;font-weight:700;color:var(--green-dark);margin:10px 0 18px;line-height:1.5}
+  @media(max-width:760px){.hero-tagline{font-size:.95rem;margin:8px 0 14px}}
+
+  /* ── Loc-Pill standalone (unter schulstart-badge) ── */
+  .loc-pill{display:inline-flex;align-items:center;gap:6px;background:rgba(185,206,46,.12);border:1px solid var(--green);color:var(--green-dark);font-size:.8rem;font-weight:700;padding:5px 12px;border-radius:50px;margin:6px 0 12px}
+
+  /* ── Schulstart-Badge mobile: eigene Zeile ── */
+  @media(max-width:760px){
+    .schulstart-badge{display:inline-flex}
+    .hero-top-text .urgency{display:none}
+    .hero-top-text .lead{display:none}
+  }
+
 </style>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -413,20 +428,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ══ HERO ══ -->
 <section class="hero">
   <div class="wrap hero-grid">
-    <!-- Mobile-only: Urgency oben -->
+
+    <!-- Mobile-only: Urgency ganz oben -->
     <div class="mobile-urgency-top">🔥 Schnuppertag · Sa., 19.09.2026</div>
 
-    <!-- Spalte 1 oben: Badge, Urgency (Desktop), Headline, Lead -->
+    <!-- Spalte 1 oben: Badge, Loc, H1, Tagline, Urgency (Desktop), Lead (Desktop) -->
     <div class="hero-top-text">
-      <div class="hero-badge-row">
-        <div class="schulstart-badge">🎒 Zum Schulstart</div>
-        <div class="loc-pill">📍 Bogenhausen</div>
-      </div>
-      <div class="urgency">🔥 Schnuppertag <strong>Sa., 19.09.2026</strong></div>
+      <div class="schulstart-badge">🎒 Zum Schulstart</div>
+      <div class="loc-pill">📍 Bogenhausen</div>
       <h1>Kinder Kampfsport München <span>6–10 Jahre</span><br>Das Power Tigers Programm</h1>
+      <p class="hero-tagline">Mehr Selbstbewusstsein&nbsp;• Mehr Konzentration&nbsp;• Mehr Sicherheit</p>
+      <div class="urgency">🔥 Schnuppertag <strong>Sa., 19.09.2026</strong></div>
       <p class="lead">Mehr als nur ein reines Kampfsportprogramm: Wir vermitteln Ihrem Kind eine „Ja, ich schaffe das"-Einstellung – mit mehr Selbstbewusstsein, Konzentration und Sicherheit für den Schulalltag.</p>
-      <p class="lead-mobile">Mehr Selbstbewusstsein, Selbstverteidigung &amp; Werte – mit Spaß für 6- bis 10-Jährige.</p>
     </div>
+
+    <!-- Bild (Desktop: Spalte 2, Mobile: zwischen top-text und bottom) -->
     <div class="hero-img">
       <img
         src="https://www.kinder-kampfsport-schinhammer.de/wp-content/uploads/2024/06/DSC01615-Schinhammer-Power-Tigers-1.jpg"
@@ -439,6 +455,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="badge-float loc"><span class="dot"></span>Bogenhausen</div>
       <div class="badge-float"><span class="dot"></span>99% Weiterempfehlung</div>
     </div>
+
+    <!-- Spalte 1 unten: Lead (Mobile), USPs, CTA, Plätze, Badges -->
+    <div class="hero-bottom">
+      <p class="lead-mobile">Mehr Selbstbewusstsein, Selbstverteidigung &amp; Werte – mit Spaß für 6- bis 10-Jährige.</p>
+      <ul>
+        <li>Stärkung von Selbstbewusstsein &amp; Selbstvertrauen</li>
+        <li>Verbale &amp; körperliche Selbstverteidigung + Anti-Mobbing</li>
+        <li>Wertevermittlung: Respekt, Disziplin, Mut</li>
+      </ul>
+      <div class="btn-row">
+        <a href="#zum-formular" class="btn big">Gratis Schnuppertag sichern →</a>
+      </div>
+      <p class="cta-plaetze">🔴 Noch <span id="plaetze-cta">15</span> freie Plätze</p>
+      <div class="mobile-badges-row">
+        <div class="mbadge">⭐ 99% Weiterempfehlung</div>
+        <div class="mbadge">🏆 30+ Jahre</div>
+        <div class="mbadge">📍 Bogenhausen</div>
+      </div>
+      <p class="hero-note" style="margin-top:14px;font-size:.9rem;color:#777">✅ Aktuell <strong>kostenlos</strong> · ⏱ Anfrage in 60 Sekunden · 📍 Grünwalder Weg 20c, Bogenhausen</p>
+    </div>
+
   </div>
 </section>
 
