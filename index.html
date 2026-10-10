@@ -416,7 +416,14 @@
   .fc-foot{text-align:center;color:var(--heading);font-size:14px;line-height:1.5;margin:10px 0 0}
   .mobile-schnupper-text{display:none}
   @media(min-width:861px){
-    .hero-grid{align-items:stretch}
+    .hero-grid{grid-template-areas:"top form""img form";align-items:stretch}
+    .hero-badge-row,.hero-bottom,.hero-img .badge-float{display:none}
+    .hero-top-text .urgency{gap:8px;font-size:24px;font-weight:400;line-height:1.25;padding:14px 24px;border-radius:9999px;color:#8a5a14;background:linear-gradient(180deg,#fffbea 0%,#fff1c4 100%);border:1px solid #f6dc8c;box-shadow:0 4px 14px rgba(138,90,20,.12);margin-bottom:20px}
+    .hero-top-text .urgency strong{font-weight:700;color:inherit;white-space:nowrap}
+    .hero h1{font-size:40px;font-weight:700;line-height:50px;color:var(--heading)}
+    .hero-top-text .lead{margin:16px 0 0}
+    .hero-img{margin:24px 0 0}
+    .hero-img img{border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.08);aspect-ratio:16/10}
     .hero-form{align-self:stretch;display:flex;margin-bottom:24px}
     .form-card{flex:1;display:flex;flex-direction:column;justify-content:space-between;padding:32px}
     #lead-form{display:flex;flex-direction:column;justify-content:space-between;flex:1}
@@ -492,9 +499,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="schulstart-badge">Schnuppertag am 14.11.2026</div>
         <div class="loc-pill">📍 Bogenhausen</div>
       </div>
+      <div class="urgency">🔥 Schnuppertag <strong>Samstag, 14.11.2026</strong></div>
       <h1>Kinder Kampfsport München <span>6–10 Jahre</span><br>Das Power Tigers Programm</h1>
       <p class="lead-mobile">Mehr Selbstbewusstsein, Selbstverteidigung &amp; Werte – mit Spaß für 6- bis 10-Jährige.</p>
-      <div class="urgency">🔥 Schnuppertag <strong>Sa., 14.11.2026</strong></div>
       <p class="lead">Mehr als nur ein reines Kampfsportprogramm: Wir vermitteln Ihrem Kind eine „Ja, ich schaffe das"-Einstellung – mit mehr Selbstbewusstsein, Konzentration und Sicherheit für den Alltag.</p>
     </div>
 
